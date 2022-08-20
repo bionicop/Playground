@@ -8,7 +8,7 @@ public class calculator {
         Scanner grasp = new Scanner(System.in);
         do
         {
-            System.out.println("Enter first number: "); 
+            System.out.println("Enter first number: "); //bbbbbbbbbbbbbbbbbbbbb
             a = grasp.nextInt();
             System.out.println("Enter second number: ");
             b = grasp.nextInt();
