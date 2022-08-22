@@ -1,2 +1,2 @@
-# calculator
-This is a simple arithmetic Calculator.
+# Playground
+This is a just a Playground to get better with java.
