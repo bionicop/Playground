@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class calculator {
-    public static void main(String[] args) throws Exception //what's this??
+    public static void main(String[] args)
     {
         System.out.println("I am going to make a calculator");
         int a, b;
@@ -8,7 +8,7 @@ public class calculator {
         Scanner grasp = new Scanner(System.in);
         do
         {
-            System.out.println("Enter first number: "); //this is a first number
+            System.out.println("Enter first number: ");
             a = grasp.nextInt();
             System.out.println("Enter second number: ");
             b = grasp.nextInt();
