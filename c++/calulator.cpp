@@ -30,7 +30,7 @@ int main()
         else
             std::cout << "Operator isn't valid (or maybe it will be in future update o.O stay connected...)" << "\n\n";
  
-        std::cout << "Do you wish to continue (Y/N)? " << "\n\n";
+        std::cout << "Do you wish to continue (Y/N)? ";
         std::cin >> optr;
     } while (optr != 'N' && optr != 'n');
 

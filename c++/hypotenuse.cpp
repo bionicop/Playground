@@ -14,6 +14,6 @@ int main() {
   // Hypotenuse Formula:
   double c = sqrt(a * a + b * b);
 
-  std::cout << "Hypotenuse is: " << c;
+  std::cout << "\nHypotenuse is: " << c;
   return 0;
 }
