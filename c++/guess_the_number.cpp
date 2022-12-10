@@ -20,7 +20,7 @@ int main() {
       std::cout << "\nCoRRReakt!!! You guessed the right number.\n\n";
       score++;
     } else {
-      std::cout << "\n are you serious right NEOW bro InCoRRReakt!!! the right number was " << target << ".\n\n";
+      std::cout << "\nare you serious right NEOW bro InCoRRReakt!!! the right number was " << target << ".\n\n";
     }
     tries++;
   } while (score < round);
