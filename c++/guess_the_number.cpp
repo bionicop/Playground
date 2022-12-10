@@ -4,7 +4,6 @@
 
 int main() {
   srand(time(0)); // Help's in the generation of random numbers by seeding rand with a starting value. source: https://stackoverflow.com/questions/4736485/srandtime0-and-random-number-generation
-
   int score = 0, round = 3,tries = 0;
   std::cout << "=== Welcome to GUeSSSSSSSS GAME ===\n\n";
 
@@ -14,8 +13,7 @@ int main() {
     std::cout << "GuesS the number between 0 - 10: ";
     int guess;
     std::cin >> guess;
-
-    // Check's whether the player guess is correct.
+    // Check's whether the player guess is correct or not.
     if (guess == target) {
       std::cout << "\nCoRRReakt!!! You guessed the right number.\n\n";
       score++;
