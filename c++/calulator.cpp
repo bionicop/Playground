@@ -29,7 +29,6 @@ int main()
             std::cout << num1 / num2 << "\n\n";
         else
             std::cout << "Operator isn't valid (or maybe it will be in future update o.O stay connected...)" << "\n\n";
-
  
         std::cout << "Do you wish to continue (Y/N)? " << "\n\n";
         std::cin >> optr;
