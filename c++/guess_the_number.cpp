@@ -23,7 +23,7 @@ int main() {
     tries++;
   } while (score < round);
   std::cout << "Your final score is " << score << "/"<< round << "\n";
-  std::cout << "ANDDDDDDDDDDDDDDDDDDDDD It took you only" << tries << " tries to win the game.\n";
+  std::cout << "ANDDDDDDDDDDDDDDDDDDDDD It took you only " << tries << " tries to win the game.\n";
   std::cout << "Congratulations you have won!\n";
 
   return 0;
