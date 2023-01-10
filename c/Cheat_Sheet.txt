@@ -1,0 +1,158 @@
+/* Comments */
+// Single-line comments start with '//'
+
+
+/* Variables */
+int a;                      // integer variable 
+float b;                    // floating-point variable 
+char c;                     // character variable 
+double d;                   // double precision variable 
+
+/* Assignment and arithmetic */
+a = 5;                      // assignment 
+b = 3.14;
+a = b + c;                  // addition 
+a = b - c;                  // subtraction 
+a = b * c;                  // multiplication 
+a = b / c;                  // division 
+a = b % c;                  // modulus (remainder) 
+
+/* Comparison and logical operators */
+a == b;                     // equal to 
+a != b;                     // not equal to 
+a > b;                      // greater than 
+a < b;                      // less than 
+a >= b;                     // greater than or equal to 
+a <= b;                     // less than or equal to 
+!a;                         // logical NOT 
+a && b;                     // logical AND 
+a || b;                     // logical OR 
+
+/* Control flow */
+if (a == b) {               // if a is equal to b 
+    // do something 
+} else if (a > b) {         // if a is greater than b 
+    // do something else 
+} else {                    // if none of the above are true 
+    // do something else 
+}
+
+while (a < b) {             // while a is less than b 
+    // do something 
+    a++;                    // increment a 
+}
+
+for (int i = 0; i < 10; i++) {   // for i = 0 to 9 
+    // do something 
+}
+
+/* Arrays */
+int array[10];              // array of integers 
+array[0] = 1;               // assign 1 to the first element of the array 
+array[1] = 2;               // assign 2 to the second element of the array 
+array[9] = 10;              // assign 10 to the last element of the array 
+
+/* Functions */
+int add(int x, int y) {      // function that takes two integers and returns an integer 
+    return x + y;            // return the sum of x and y 
+}
+int result = add(a, b);      // call the add function with a and b as arguments 
+
+/* Pointers */
+int *ptr;                   // pointer to an integer 
+ptr = &a;                   // store address of a in pointer 
+*ptr = 5;                   // dereference pointer to set the value of a to 5 
+
+/* Structures */
+struct Point {
+    int x;
+    int y;
+}
+struct Point p;            // create variable of type Point 
+p.x = 3;                   // set x coordinate of point to 3 
+p.y = 4;                   // set y coordinate of point to 4 
+
+/* Dynamic memory allocation */
+int *c = (int *)malloc(sizeof(int));  // allocate memory for one integer 
+*c = 5;                               // set value of allocated memory to 5 
+free(c);                              // deallocate memory when no 
+
+/* File input/output */
+FILE *file;
+file = fopen("example.txt", "w");   /* open file for writing */
+fprintf(file, "Hello, world!");     /* write string to file */
+fclose(file);                       /* close file */
+
+file = fopen("example.txt", "r");   /* open file for reading */
+char str[100];
+fscanf(file, "%s", str);            /* read string from file */
+printf("%s", str);                  /* print string */
+fclose(file);                       /* close file */
+
+/* Enums */
+enum Colors { RED, GREEN, BLUE};
+enum Colors favorite_color = GREEN;
+
+/* Bitwise operators */
+&     // bitwise AND
+|     // bitwise OR
+^     // bitwise XOR
+~     // bitwise NOT
+<<    // left shift
+>>    // right shift
+
+/* Type casting */
+int i = 5;
+float f = (float)i;
+
+/* Type conversion */
+float g = 3.14;
+int j = (int)g;   // j will be equal to 3
+
+/* Command-line arguments */
+int main(int argc, char *argv[]) {
+    // argc is the number of arguments, argv is an array of strings containing the arguments
+}
+
+/* Recursion */
+void recursive_function(int n) {
+    if (n <= 0) {
+        return;
+    }
+    // do something
+    recursive_function(n-1);
+}
+
+/* Function pointers */
+int add(int x, int y) {
+    return x + y;
+}
+int subtract(int x, int y) {
+    return x - y;
+}
+int (*operation)(int, int);
+operation = add;
+int result = operation(5, 3);
+
+/* Preprocessor directives */
+#define PI 3.14
+#ifndef MAX
+#define MAX 100
+#endif
+
+/* Exception handling */
+try {
+    // code that may throw an exception
+} catch (const std::exception& e) {
+    // handle exception
+}
+
+/* Multithreading */
+#include <pthread.h>
+void *thread_function(void *arg) {
+    // code that runs in the new thread
+    return NULL;
+}
+pthread_t thread;
+pthread_create(&thread, NULL, thread_function, NULL);
+pthread_join(thread, NULL);  /* wait for thread to finish */
